@@ -107,7 +107,10 @@ int	main(int argc, char **argv)
 	if (argc == 1)
 		return (0);
 	else
+	{
+		ft_check_argv(argc, argv);
 		push_mass_stack(argc, argv, &a);
+	}
 	ft_read_line(&a, &b);
 	ft_checker_sort(a, b);
 	return (0);
